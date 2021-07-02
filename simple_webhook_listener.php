@@ -29,8 +29,8 @@ $info = "Notification received...\n";
 fwrite($o_file, $info);
 
 // append the data as it is received into the file
-fwrite($ofile, $data);
+fwrite($o_file, $data);
 
-fclose($ofile);
+fclose($o_file);
 
 ?>
