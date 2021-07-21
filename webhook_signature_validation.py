@@ -1,7 +1,7 @@
 
 #!/usr/bin/env python3
 
-# This scripts validates the signature present in the Rapyd webhooks.
+# This scripts validates the signature present in the Rapyd webhooks
 
 __author__ = "Isaac Benitez"
 __date__ = "07/21/2021"
