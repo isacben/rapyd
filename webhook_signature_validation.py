@@ -21,7 +21,8 @@ access_key = ''
 secret_key = ''
 
 # body of the webhook with no spaces
-body = '{"id":"wh_500d5534e75219af0c1a26113bb07d0e","type":"CUSTOMER_DELETED","data":{"id":"cus_9d170fd802ead04e5dbda8b48125cf74","deleted":true},"trigger_operation_id":"f675b964-9bac-4f36-9cbf-f768413d947c","status":"NEW","created_at":1626830113}'
+body_obj = '{"id":"wh_500d5534e75219af0c1a26113bb07d0e","type":"CUSTOMER_DELETED","data":{"id":"cus_9d170fd802ead04e5dbda8b48125cf74","deleted":true},"trigger_operation_id":"f675b964-9bac-4f36-9cbf-f768413d947c","status":"NEW","created_at":1626830113}'
+body = json.dumps (json.loads(body_obj), separators=(',', ':'))
 
 to_sign = path + salt + str(timestamp) + access_key + secret_key + body
 
