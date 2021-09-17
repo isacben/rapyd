@@ -5,7 +5,7 @@
 
 __author__ = "Isaac Benitez"
 __date__ = "07/21/2021"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 import hashlib
 import base64
