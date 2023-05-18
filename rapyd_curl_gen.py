@@ -10,8 +10,8 @@ import hmac
 path = '/v1/data/countries'
 timestamp = int(time.time())
 salt = ''.join(random.sample(string.ascii_letters + string.digits, 12))
-access_key = ''
-secret_key = ''
+access_key = '' # Rapyd acces key
+secret_key = '' # Rapyd secret key
 
 
 to_sign = 'get' + path + salt + str(timestamp) + access_key + secret_key + ''
